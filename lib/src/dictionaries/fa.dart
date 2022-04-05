@@ -95,7 +95,7 @@ class Fa {
   };
   static Map titles = const {
     'fa': {
-      'empty': 'خالی',
+      'empty': '',
       'month_selector': 'یک ماه را انتخاب کنید',
       'year_selector': 'یک سال را انتخاب کنید',
     }
