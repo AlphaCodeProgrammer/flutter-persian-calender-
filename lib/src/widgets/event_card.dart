@@ -3,11 +3,12 @@ import '../handlers/event_calendar.dart';
 import '../models/calendar_options.dart';
 import '../models/event.dart';
 import '../models/style/event_style.dart';
+import 'package:persian_number_utility/persian_number_utility.dart';
 
 class EventCard extends StatelessWidget {
   Event fullCalendarEvent;
 
-  EventCard({required this.fullCalendarEvent});
+  EventCard({required this.fullCalendarEvent,});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class EventCard extends StatelessWidget {
                       : TextDirection.ltr,
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: 20,
+                    fontSize: 14,
                     color: EventStyle.of(context).titleColor,
                     fontFamily: CalendarOptions.of(context).font,
                   ),
@@ -59,7 +60,7 @@ class EventCard extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  '${fullCalendarEvent.dateTime.toString()}',
+                  '${fullCalendarEvent.dateTime.toString().toPersianDigit()}',
                   style: TextStyle(
                     fontSize: 12,
                     color: EventStyle.of(context).dateTimeColor,

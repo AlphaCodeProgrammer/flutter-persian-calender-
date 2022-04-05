@@ -4,6 +4,7 @@ class Event {
   late int listIndex;
   late String title;
   late String description;
+  late String endDate;
   late EventDateTime dateTime;
   late Function? onTap;
   late Function? onLongPress;
@@ -11,6 +12,7 @@ class Event {
   Event({
     required this.title,
     String? description,
+    String? endDate,
     required this.dateTime,
     onTap(int listIndex)?,
     onLongPress,

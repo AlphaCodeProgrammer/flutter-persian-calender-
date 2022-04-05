@@ -45,10 +45,10 @@ class MyHomePage extends StatelessWidget {
         },
         events: [
           Event(
-            title: 'Laravel Event',
+            title: ' مهدی رخصتی',
             description:
-                'The largest Laravel event of the year, streamed directly to you. We’ve put together a full day of talks featuring some of Laravel’s brightest minds, and streaming them directly to your home or office.',
-            dateTime: EventDateTime(year: 1400, month: 07, day: 22),
+                'سلام بی زحمت میخواستم ساعت 8 بیام',
+            dateTime: EventDateTime(year: 1401, month: 01, day: 15),
           ),
 
           Event(

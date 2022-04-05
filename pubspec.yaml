@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   shamsi_date: ^1.0.1
+  persian_number_utility: ^1.1.1
 
 dev_dependencies:
   flutter_test:

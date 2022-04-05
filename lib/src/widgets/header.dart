@@ -5,6 +5,7 @@ import '../models/style/select_month_style.dart';
 import '../models/style/select_year_style.dart';
 import 'select_month.dart';
 import 'select_year.dart';
+import  'package:persian_number_utility/persian_number_utility.dart';
 
 class Header extends StatelessWidget {
   Function onHeaderChanged;
@@ -88,7 +89,7 @@ class Header extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Text(' , '),
+                      Text('  '),
                       GestureDetector(
                         onTap: () {
                           showModalBottomSheet(
@@ -107,7 +108,7 @@ class Header extends StatelessWidget {
                           );
                         },
                         child: Text(
-                          '${CalendarUtils.getPartByInt(format: PartFormat.year)}',
+                          '${CalendarUtils.getPartByInt(format: PartFormat.year)}'.toString().toPersianDigit(),
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 20,
