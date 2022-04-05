@@ -70,7 +70,28 @@ class Events extends StatelessWidget {
         ),
       );
 
-    
+    if (selectedEvents.length == 0)
+      eventCards.add(Column(
+        children: [
+          SizedBox(
+            height: 150,
+          ),
+          Icon(
+            eventStyle.emptyIcon,
+            size: 95,
+            color: eventStyle.emptyIconColor,
+          ),
+          Text(
+            '${eventStyle.emptyText != null ? eventStyle.emptyText : Translator.getTranslation('empty')}',
+            style: TextStyle(
+              color: eventStyle.emptyTextColor,
+              fontSize: 25,
+              fontFamily: CalendarOptions.of(context).font,
+            ),
+          ),
+        ],
+      ));
+
     return eventCards;
   }
 }
