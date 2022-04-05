@@ -74,7 +74,7 @@ class Events extends StatelessWidget {
       eventCards.add(Column(
         children: [
           SizedBox(
-            height: 150,
+            height: 10,
           ),
           Icon(
             eventStyle.emptyIcon,
