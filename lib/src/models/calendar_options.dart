@@ -9,7 +9,7 @@ class CalendarOptions extends Model {
 
   CalendarOptions(
       {this.toggleViewType = false,
-      this.viewType = ViewType.Monthly,
+      this.viewType = ViewType.Daily,
       this.font = ''});
 
   static CalendarOptions of(BuildContext context) =>
