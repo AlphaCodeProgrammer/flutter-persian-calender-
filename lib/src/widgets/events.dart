@@ -76,11 +76,7 @@ class Events extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Icon(
-            eventStyle.emptyIcon,
-            size: 10,
-            color: eventStyle.emptyIconColor,
-          ),
+          
           Text(
             '${eventStyle.emptyText != null ? eventStyle.emptyText : Translator.getTranslation('empty')}',
             style: TextStyle(
