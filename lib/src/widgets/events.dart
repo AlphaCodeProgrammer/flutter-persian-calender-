@@ -70,7 +70,7 @@ class Events extends StatelessWidget {
         ),
       );
 
-    if (selectedEvents.length == 0)
+    if (selectedEvents.length == -1)
       eventCards.add(Column(
         children: [
           SizedBox(
